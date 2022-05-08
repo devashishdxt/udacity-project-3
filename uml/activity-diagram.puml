@@ -1,0 +1,16 @@
+@startuml Activity Diagram
+|Farmer|
+start
+:Harvest Coffee;
+:Process Coffee;
+:Pack Coffee;
+:Put Coffee up for sale;
+|Distributor|
+:Buy Coffee;
+:Ship Coffee;
+|Retailer|
+:Receive Coffee;
+|Consumer|
+:Purchase Coffee;
+stop
+@enduml

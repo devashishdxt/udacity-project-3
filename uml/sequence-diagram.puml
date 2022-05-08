@@ -1,0 +1,19 @@
+@startuml Sequence Diagram
+activate Coffee
+Coffee <- Farmer : harvestItem()
+activate Farmer
+Coffee <- Farmer : processItem()
+Coffee <- Farmer : packItem()
+Coffee <- Farmer : sellItem()
+Farmer <- Distributor : buyItem()
+deactivate Farmer
+activate Distributor
+Distributor -> Retailer : shipItem()
+deactivate Distributor
+activate Retailer
+Retailer <- Consumer : purchaseItem()
+deactivate Retailer
+activate Consumer
+Coffee -> Consumer : fetchItemBufferOne()
+Coffee -> Consumer : fetchItemBufferTwo()
+@enduml
