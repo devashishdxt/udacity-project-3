@@ -36,8 +36,6 @@ contract SupplyChain is
         Purchased // 7
     }
 
-    State constant defaultState = State.Harvested;
-
     // Define a struct 'Item' with the following fields:
     struct Item {
         uint256 sku; // Stock Keeping Unit (SKU)
