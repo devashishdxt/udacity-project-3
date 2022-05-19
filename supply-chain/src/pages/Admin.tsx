@@ -1,6 +1,5 @@
 import { Web3State } from "../App";
-import AddFarmer from "../components/admin/AddFarmer";
-import AddRole from "../components/admin/AddRole";
+import AddRole from "../components/AddRole";
 import Page from "./Page";
 
 type Props = {

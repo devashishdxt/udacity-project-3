@@ -1,5 +1,5 @@
 import { FormEvent, useState } from "react";
-import { Web3State } from "../../App";
+import { Web3State } from "../App";
 
 type Props = {
     role: string,
