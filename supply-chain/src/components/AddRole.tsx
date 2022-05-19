@@ -33,7 +33,7 @@ const AddRole = ({ role, web3State }: Props) => {
                 alert(`${address} is not a ${role}`);
             }
         } catch (e) {
-            alert("Failed to add role (check console for more info)");
+            alert("Failed to check role (check console for more info)");
             console.error(e);
         }
     };

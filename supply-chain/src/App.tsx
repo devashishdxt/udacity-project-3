@@ -32,7 +32,7 @@ const App = () => {
         <Sidebar />
         <Routes>
           <Route path="/" element={<Home address={web3State.address} />} />
-          <Route path="/farmer" element={<Farmer />} />
+          <Route path="/farmer" element={<Farmer web3State={web3State} />} />
           <Route path="/distributor" element={<Distributor />} />
           <Route path="/retailer" element={<Retailer />} />
           <Route path="/consumer" element={<Consumer />} />
