@@ -1,9 +1,19 @@
+import { Web3State } from "../App";
+import AddFarmer from "../components/admin/AddFarmer";
+import AddRole from "../components/admin/AddRole";
 import Page from "./Page";
 
-const Admin = () => {
+type Props = {
+    web3State: Web3State,
+};
+
+const Admin = ({ web3State }: Props) => {
     return (
         <Page name="Admin">
-            <div>hello</div>
+            <AddRole role="Farmer" web3State={web3State} />
+            <AddRole role="Distributor" web3State={web3State} />
+            <AddRole role="Retailer" web3State={web3State} />
+            <AddRole role="Consumer" web3State={web3State} />
         </Page>
     )
 };

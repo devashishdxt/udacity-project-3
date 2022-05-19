@@ -302,7 +302,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -321,7 +322,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -340,7 +342,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -353,7 +356,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -372,7 +376,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -385,7 +390,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -540,7 +546,8 @@
       "name": "buyItem",
       "outputs": [],
       "stateMutability": "payable",
-      "type": "function"
+      "type": "function",
+      "payable": true
     },
     {
       "inputs": [
@@ -633,7 +640,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -692,7 +700,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     }
   ],
   "metadata": "{\"compiler\":{\"version\":\"0.8.13+commit.abaa5c0e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"name\":\"ConsumerAdded\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"name\":\"ConsumerRemoved\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"name\":\"DistributorAdded\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"name\":\"DistributorRemoved\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"name\":\"FarmerAdded\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"name\":\"FarmerRemoved\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"upc\",\"type\":\"uint256\"}],\"name\":\"ForSale\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"upc\",\"type\":\"uint256\"}],\"name\":\"Harvested\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"upc\",\"type\":\"uint256\"}],\"name\":\"Packed\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"upc\",\"type\":\"uint256\"}],\"name\":\"Processed\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"upc\",\"type\":\"uint256\"}],\"name\":\"Purchased\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"upc\",\"type\":\"uint256\"}],\"name\":\"Received\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"name\":\"RetailerAdded\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"name\":\"RetailerRemoved\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"upc\",\"type\":\"uint256\"}],\"name\":\"Shipped\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"upc\",\"type\":\"uint256\"}],\"name\":\"Sold\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"oldOwner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"TransferOwnership\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"name\":\"addConsumer\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"name\":\"addDistributor\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"name\":\"addFarmer\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"name\":\"addRetailer\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_upc\",\"type\":\"uint256\"}],\"name\":\"buyItem\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_upc\",\"type\":\"uint256\"}],\"name\":\"fetchItemBufferOne\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"itemSKU\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"itemUPC\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"ownerID\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"originFarmerID\",\"type\":\"address\"},{\"internalType\":\"string\",\"name\":\"originFarmName\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"originFarmInformation\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"originFarmLatitude\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"originFarmLongitude\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_upc\",\"type\":\"uint256\"}],\"name\":\"fetchItemBufferTwo\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"itemSKU\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"itemUPC\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"productID\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"productNotes\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"productPrice\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"itemState\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"distributorID\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"retailerID\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"consumerID\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_upc\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"_originFarmerID\",\"type\":\"address\"},{\"internalType\":\"string\",\"name\":\"_originFarmName\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"_originFarmInformation\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"_originFarmLatitude\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"_originFarmLongitude\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"_productNotes\",\"type\":\"string\"}],\"name\":\"harvestItem\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"name\":\"isConsumer\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"name\":\"isDistributor\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"name\":\"isFarmer\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"isOwner\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"name\":\"isRetailer\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"kill\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_upc\",\"type\":\"uint256\"}],\"name\":\"packItem\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_upc\",\"type\":\"uint256\"}],\"name\":\"processItem\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_upc\",\"type\":\"uint256\"}],\"name\":\"purchaseItem\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_upc\",\"type\":\"uint256\"}],\"name\":\"receiveItem\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"renounceConsumer\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"renounceDistributor\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"renounceFarmer\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"renounceOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"renounceRetailer\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_upc\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"_price\",\"type\":\"uint256\"}],\"name\":\"sellItem\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_upc\",\"type\":\"uint256\"}],\"name\":\"shipItem\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"isOwner()\":{\"notice\":\"Check if the calling address is the owner of the contract\"},\"owner()\":{\"notice\":\"Look up the address of the owner\"},\"renounceOwnership()\":{\"notice\":\"Define a function to renounce ownerhip\"},\"transferOwnership(address)\":{\"notice\":\"Define a public function to transfer ownership\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/coffeebase/SupplyChain.sol\":\"SupplyChain\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/coffeeaccesscontrol/ConsumerRole.sol\":{\"keccak256\":\"0xd00c1f22743f26fb2df4537e0e43b5d150318b208b1fec876767b509303a7456\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c9eafbec24d2205aff0855396bb9fbb71bef11931caf663b2b0627823f0aea70\",\"dweb:/ipfs/QmYninm3RDpUscM1EktKyvvs12RccJAnDT5jhn7btCHTGY\"]},\"project:/contracts/coffeeaccesscontrol/DistributorRole.sol\":{\"keccak256\":\"0x575bfe91c278877f6a3c53d3fb8e5832764acbda5377f372fdf43c3facea7852\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://72899495cc7258ecf8fd634b23fcad4e6f5740a03e00b0196743e453ab4dbd3d\",\"dweb:/ipfs/QmcMFSgbPUrzksLTmiUjfPLLXvQM6hj4EPKZ1bosaq64FR\"]},\"project:/contracts/coffeeaccesscontrol/FarmerRole.sol\":{\"keccak256\":\"0x619075b8abb2f87e7fffe22297f579ad6e3b25f5d2be0d1f26b489b35d7a6d0e\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://49e6ff5a91117f3724a0875f80f2379e3f6d5df3e4b35cb1df1f9d9f4c9faf36\",\"dweb:/ipfs/QmSy77UHkjeJS3Pca9Pvc3edet8mYcrjey48vkr5sNuR1Q\"]},\"project:/contracts/coffeeaccesscontrol/RetailerRole.sol\":{\"keccak256\":\"0x60557ff0441f462f5186593853b40c438756415317c490b1c15378213bd1cdd3\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://7258b201ed797e9026780c46f33acc46d9f369526ff0601f421850849b627a80\",\"dweb:/ipfs/QmfLbZo5e2KqfQHAZFjKjE7zvtz7N6PEX6wGaD15xC4fdd\"]},\"project:/contracts/coffeeaccesscontrol/Roles.sol\":{\"keccak256\":\"0x9e54068b3c599033690679210a8d73b19a0195574b0f6faed2afc4b743faa478\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://54b326cdadc5e3c9a37b42e2c60859018e555f862b3e3234fa6419ebf44c7032\",\"dweb:/ipfs/QmevEx7AwZhKQw7XmvHA3uJHnEKEp3EJYkQHGjef38U3D6\"]},\"project:/contracts/coffeebase/SupplyChain.sol\":{\"keccak256\":\"0xf9c6d735b87129cf8dc18f34d95c90c3618effd03e5da61bd172a68ae9ec4c00\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6f5f7ccef40c6adffcb6db0cb763e40324f746ab0253d9a1d87035b281b068b0\",\"dweb:/ipfs/QmaruzfG3SXtqpQ4NWzRoKjbRgtKkCx7yGo47YePqZueH2\"]},\"project:/contracts/coffeecore/Ownable.sol\":{\"keccak256\":\"0x11eaf3daee2e5bae71c7464df8c8c94c72ce2bfc91fa420cc18c957631fcae7c\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://b7658a2bfdd933b46847cd5d15f3883c00fc8daee1044b005688dac85a5f6708\",\"dweb:/ipfs/QmXvfcZntrLgHTsJSr7SBgPMMmVu4fCEpZAdDvcyaEz7Jh\"]}},\"version\":1}",
@@ -17782,9 +17791,17 @@
     "name": "solc",
     "version": "0.8.13+commit.abaa5c0e.Emscripten.clang"
   },
-  "networks": {},
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0xFd986c5E33AB34D2006658F2193Ed66f7dBD7D47",
+      "transactionHash": "0xd0baed074d9f03004a82ea827d63e60964edc8fe8c381316a86d5789e62cc053"
+    }
+  },
   "schemaVersion": "3.4.7",
-  "updatedAt": "2022-05-19T03:28:44.123Z",
+  "updatedAt": "2022-05-19T05:51:22.902Z",
+  "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
     "methods": {},

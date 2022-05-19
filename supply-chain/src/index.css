@@ -4,7 +4,7 @@
 
 @layer components {
     div.sidebar {
-        @apply flex-none left-0 top-0 absolute h-screen bg-slate-800 text-white text-xs pt-2;
+        @apply flex-none left-0 top-0 fixed h-screen bg-slate-800 text-white text-xs pt-2;
     }
 
     div.sidebar-item {
@@ -27,7 +27,11 @@
         @apply px-6 py-4 text-slate-800;
     }
 
-    button {
-        @apply px-6 py-2 bg-slate-200 text-slate-900 text-xs shadow hover:shadow-md hover:bg-slate-300 transition-all;
+    .button {
+        @apply px-6 py-2 bg-slate-200 text-slate-900 text-xs shadow hover:shadow-md hover:bg-slate-300 transition-all bg-opacity-100;
+    }
+
+    .input {
+        @apply outline-none w-full py-2 px-4 border-2 text-xs;
     }
 }
