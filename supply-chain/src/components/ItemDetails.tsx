@@ -5,6 +5,29 @@ type Props = {
 }
 
 const ItemDetails = ({ item }: Props) => {
+    const getStateString = (state: string) => {
+        switch (state) {
+            case "0":
+                return "Harvested";
+            case "1":
+                return "Processed";
+            case "2":
+                return "Packed";
+            case "3":
+                return "For Sale";
+            case "4":
+                return "Sold";
+            case "5":
+                return "Shipped";
+            case "6":
+                return "Received";
+            case "7":
+                return "Purchased";
+            default:
+                return "Unknown";
+        }
+    }
+
     if (!item) {
         return (
             <div></div>
@@ -59,7 +82,7 @@ const ItemDetails = ({ item }: Props) => {
                     </tr>
                     <tr>
                         <td className="px-4 py-2 border-2 font-bold">Item State</td>
-                        <td className="px-4 py-2 border-2">{item.itemState}</td>
+                        <td className="px-4 py-2 border-2">{getStateString(item.itemState)}</td>
                     </tr>
                     <tr>
                         <td className="px-4 py-2 border-2 font-bold">Distributor Address</td>

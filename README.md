@@ -26,7 +26,7 @@ Following is the UML state diagram for the project.
 
 Following is the UML class diagram for the project.
 
-<!-- TODO -->
+![Class Diagram](./uml/Class%20Diagram.svg "Class Diagram")
 
 ## Libraries
 

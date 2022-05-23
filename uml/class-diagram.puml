@@ -1,0 +1,71 @@
+@startuml Class Diagram
+package Core {
+    class Ownable {
+        {field} origOwner: address
+
+        {method} owner(): address
+        {method} isOwner(): bool
+        {method} renounceOwnership()
+        {method} transferOwnership(newOwner: address)
+    }
+}
+
+package AccessControl {
+    class FarmerRole {
+        {field} farmers: Role
+
+        {method} isFarmer(account: address): bool
+        {method} addFarmer(account: address)
+        {method} renounceFarmer()
+    }
+
+    class DistributorRole {
+        {field} distributors: Role
+
+        {method} isDistributor(account: address): bool
+        {method} addDistributor(account: address)
+        {method} renounceDistributor()
+    }
+
+    class RetailerRole {
+        {field} retailers: Role
+
+        {method} isRetailer(account: address): bool
+        {method} addRetailer(account: address)
+        {method} renounceRetailer()
+    }
+
+    class ConsumerRole {
+        {field} consumers: Role
+
+        {method} isConsumer(account: address): bool
+        {method} addConsumer(account: address)
+        {method} renounceConsumer()
+    }
+}
+
+package Base {
+    class SupplyChain {
+        {field} sku: uint256
+        {field} items: mapping(uint256 => Item)
+
+        {method} harvestItem(upc: uint256, originFarmerID: address, originFarmName: string, originFarmInformation: string, originFarmLatitude: string, originFarmLongitude: string, productNotes: string)
+        {method} processItem(upc: uint256)
+        {method} packItem(upc: uint256)
+        {method} sellItem(upc: uint256, price: uint256)
+        {method} buyItem(upc: uint256)
+        {method} shipItem(upc: uint256)
+        {method} receiveItem(upc: uint256)
+        {method} purchaseItem(upc: uint256)
+        {method} fetchItemBufferOne(upc: uint256): (sku: uint256, upc: uint256, ownerID: address, originFarmerID: address, originFarmName: string, originFarmInformation: string, originFarmLatitude: string, originFarmLongitude: string)
+        {method} fetchItemBufferTwo(upc: uint256): (sku: uint256, upc: uint256, productID: uint256, productNotes: string, price: uint256, itemState: uint256, distributorID: address, retailerID: address, consumerID: address)
+    }
+
+    Ownable <|-- SupplyChain
+    FarmerRole <|-- SupplyChain
+    DistributorRole <|-- SupplyChain
+    RetailerRole <|-- SupplyChain
+    ConsumerRole <|-- SupplyChain
+}
+
+@enduml
