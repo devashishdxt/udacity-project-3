@@ -31,11 +31,11 @@ const App = () => {
       <main className="flex">
         <Sidebar />
         <Routes>
-          <Route path="/" element={<Home address={web3State.address} />} />
+          <Route path="/" element={<Home web3State={web3State} />} />
           <Route path="/farmer" element={<Farmer web3State={web3State} />} />
-          <Route path="/distributor" element={<Distributor />} />
-          <Route path="/retailer" element={<Retailer />} />
-          <Route path="/consumer" element={<Consumer />} />
+          <Route path="/distributor" element={<Distributor web3State={web3State} />} />
+          <Route path="/retailer" element={<Retailer web3State={web3State} />} />
+          <Route path="/consumer" element={<Consumer web3State={web3State} />} />
           <Route path="/admin" element={<Admin web3State={web3State} />} />
         </Routes>
       </main>

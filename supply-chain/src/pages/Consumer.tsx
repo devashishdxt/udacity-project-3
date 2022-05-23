@@ -1,9 +1,15 @@
+import { Web3State } from "../App";
+import PurchaseItem from "../components/consumer/PurchaseItem";
 import Page from "./Page";
 
-const Consumer = () => {
+type Props = {
+    web3State: Web3State,
+}
+
+const Consumer = ({ web3State }: Props) => {
     return (
         <Page name="Consumer">
-            <div>hello</div>
+            <PurchaseItem web3State={web3State} />
         </Page>
     )
 };
