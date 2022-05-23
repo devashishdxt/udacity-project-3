@@ -20,7 +20,7 @@ Following is the UML sequence diagram for the project.
 
 Following is the UML state diagram for the project.
 
-<!-- TODO -->
+![State Diagram](./uml/State%20Diagram.svg "State Diagram")
 
 ### Class Diagram
 
@@ -114,3 +114,8 @@ Finally, go to the **Home** tab and fetch the details of the item.
 
 > Note: The smart contract implements role management, so remember to add all the roles before performing any action.
 Also, remember to perform each action using the correct role (correct wallet).
+
+## Rinkeby Testnet Deployment Details
+
+- Transaction Hash: [`0x50c41d55d7a96fd230dd0787d335164ad582da9ee59aa1d861f2b187131e49e2`](https://rinkeby.etherscan.io/tx/0x50c41d55d7a96fd230dd0787d335164ad582da9ee59aa1d861f2b187131e49e2)
+- Contract Address: [`0x680412163c03981CA5Feb104F698D4Ad9bF7f5F3`](https://rinkeby.etherscan.io/address/0x680412163c03981ca5feb104f698d4ad9bf7f5f3)

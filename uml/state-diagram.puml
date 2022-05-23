@@ -1,0 +1,35 @@
+@startuml State Diagram
+[*] -right-> Harvested : harvestItem()
+note on link
+  Farmer
+end note
+Harvested -right-> Processed : processItem()
+note on link
+  Farmer
+end note
+Processed -right-> Packed : packItem()
+note on link
+  Farmer
+end note
+Packed -right-> ForSale : sellItem()
+note on link
+  Farmer
+end note
+ForSale --> Sold : buyItem()
+note on link
+  Distributor
+end note
+Sold -left-> Shipped : shipItem()
+note on link
+  Distributor
+end note
+Shipped -left-> Received : receiveItem()
+note on link
+  Retailer
+end note
+Received -left-> Purchased : purchaseItem()
+note on link
+  Consumer
+end note
+Purchased -left-> [*]
+@enduml
