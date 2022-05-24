@@ -32,15 +32,15 @@ Following is the UML class diagram for the project.
 
 ### Backend
 
-- Truffle `v5.5.12`
-- Ganache `v7.1.0`
-- Solidity `v0.8.13`
+- Truffle `v5.5.12` (used as a framework to write, test and deploy smart contracts)
+- Ganache `v7.1.0` (used as a local development blockchain)
+- Solidity `v0.8.13` (used as a programming language to write smart contracts)
 - NodeJS `v16.15.0`
 
 ### Frontend
 
 - React `v18.1.0` (used because I wanted to learn React 18)
-- Web3.js `v1.7.3`
+- Web3.js `v1.7.3` (used to interact with ethereum blockchain from the front-end)
 - Tailwind CSS `v3.0.24` (used for easy CSS styling)
 
 > Note: IPFS was not used in this project.
